@@ -1,0 +1,9 @@
+<h1>billboard</h1>
+<div class="row" *ngIf="movies.length > 0">
+    <div class="col">
+        <app-slider [movies]="moviesSlider"></app-slider>
+    </div>
+</div>
+
+<h2 class="mt-3">movies</h2>
+<app-movies-poster-grid [movies]="movies" *ngIf="movies.length > 0"></app-movies-poster-grid>
